@@ -9,7 +9,7 @@ const studentEvaluationFilename = studentFolder + config.EXCEL_FILE_NAME;
 exports.grade = function (criterias) {
 	const workbook = new ExcelJS.Workbook();
 	workbook.xlsx.readFile(studentEvaluationFilename).then(async () => {
-		const sheet = workbook.getWorksheet('Sheet1');
+		const sheet = workbook.getWorksheet(config.WORKSHEET_NAME);
 
 		for (const criteria of criterias) {
 			await criteriaMark(criteria.name, sheet.getCell(config.MARK_COLUMN + criteria.row));
