@@ -2,8 +2,8 @@ const gradingUtils = require('./grading-utils');
 
 const criterias = [
 	{
-		name: 'diagramme de classes',
-		row: 27,
+		name: 'tableau de CRC',
+		row: 26,
 	},
 ];
 
