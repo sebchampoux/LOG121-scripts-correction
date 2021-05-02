@@ -11,11 +11,11 @@ const criterias = [
 	},
 	{
 		name: 'création usines',
-		row: 32,
+		row: 31,
 	},
 	{
 		name: 'création composantes',
-		row: 31,
+		row: 32,
 	},
 ];
 
