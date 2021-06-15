@@ -15,12 +15,13 @@ browseStudentDirsUtils.forEachStudentDir(dirent => {
 			.value.result;
 
 		const correctionFileName = './' + folderName + '/' + config.FINAL_GRADE_FILENAME;
+		const formattedGrade = totalGrade ?? 0;
 
 		fs.writeFile(
 			correctionFileName,
-			'note:' + totalGrade
+			`note:${formattedGrade}`
 		).then(() => {
-			console.log('Wrote note:' + totalGrade + ' to ' + correctionFileName);
+			console.log(`Wrote note:${formattedGrade} to ${correctionFileName}`);
 		});
 	});
 });
