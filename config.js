@@ -18,4 +18,8 @@ exports.TOTAL_CELL = 'C64';
 /**/
 
 // TP3
-// TODO
+/*
+exports.EXCEL_FILE_NAME = 'evaluation-equipe.xlsx';
+exports.TEMPLATE_FILENAME = 'tp3-template.xlsx';
+exports.TOTAL_CELL = 'C63';
+/**/
